@@ -1,0 +1,544 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+/* ========== ESTILOS HEADER ========== */
+
+.header-top{
+    width: 100vw;
+    height: 15vh;
+    background-image: url(../img/header-top.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .header-bottom{
+    width: 100vw;
+    height: 7vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .header-logo{
+    width: 96px;
+    height: 96px;
+    position: absolute;
+    top: 7vh;
+    left: 5vw;
+    border: 1px solid rgb(192, 192, 192);
+    border-radius: 50%;
+    background-image: url(../img/logo.png);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .github, .linkedin {
+    margin-right: 1em;
+  }
+
+  .bi-github, .bi-linkedin{
+    color: #3b3b53;
+  }
+
+  .nav{
+    margin-left: .5em;
+  }
+
+  .hide, .remove {
+    display: none;
+  }
+
+  .alert {
+    z-index: 100;
+  }
+
+  .carritoLogo{
+    width: auto;
+    height: auto;
+    background: #e77700;
+    opacity: 0.9;
+    margin: .5em;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: middle;
+    border-radius: 5px;
+    color: #fff;
+  }
+
+  .carritoIco {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px 3px;
+  }
+
+  .precio p{
+    font-size: .8rem;
+    font-family: monospace;
+    letter-spacing: .1rem;
+    font-weight: 300;
+  }
+
+  .carritoLogo p {
+    width: auto;
+    padding-left: 3px;
+    margin: 0;
+  }
+  
+/* ========== FIN ESTILOS HEADER ========== */
+
+
+/* ========== ESTILOS FOOTER ========== */
+
+.footer{
+  margin: 0;
+  padding: .5em;
+}
+
+.footer-mapa{
+  margin-bottom: .7rem;
+  text-align: center;
+}
+
+.contenedor-footer{
+  color: #fff;
+}
+
+.titulos{
+  font-size: 2em;
+  font-weight: 700;
+  text-align: center;
+  color: #505050;
+}
+
+.subtitulos{
+  font-size: 1.2em;
+  text-align: center;
+  color: #3b3b53;
+}
+
+.footer-logo{
+  width: 70px;
+  height: 70px;
+  border: 1px solid rgb(192, 192, 192);
+  border-radius: 50%;
+  background-image: url(../img/logo.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.footer-titulo h4{
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: 400;
+}
+
+.footer-titulo h5{
+  color: #fff;
+  font-size: .9em;
+  font-weight: 400;
+}
+
+.footer-titulo-logo{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: .5em;
+}
+
+.footer-frase p{
+  color: #fff;
+  font-size: .8em;
+  margin: 1rem .5rem;
+  text-align: center;
+}
+
+.footer-contacto h6{
+  margin-top: 1em;
+  color: #fff;
+}
+
+.footer-contacto h5{
+  color: #fff;
+  font-size: .9em;
+  font-weight: 400;
+}
+
+.footer-ico{
+  color: #fff;
+  margin: 1em 0;
+  display: flex;
+  gap: .6rem;
+}
+
+.footer-datos{
+  font-size: .8rem;
+  color: rgb(78, 79, 80);
+  text-align: center; 
+}
+
+.footer p{
+  margin: 0;
+  text-align: center;
+}
+
+.mapa{
+  border-radius: 2%;
+}
+
+/* ========== FIN ESTILOS FOOTER ========== */
+
+
+
+/* ========== ESTILOS INICIO ========== */
+
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.3em;
+  background-color: rgba(243, 243, 243, 0.705);
+  padding: .5em 0;
+}
+
+.categoria-productos{
+  background: rgb(185, 89, 89);
+  width: 96vw;
+  height: 15vh;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+#frutosSecos{
+  background-image: url(../img/frutos-secos.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#frutosSecos a{
+  text-decoration: none;
+  list-style: none;
+  color: #fff;
+}
+
+#dulcesMieles{
+  background-image: url(../img/dulces-mieles.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#dulcesMieles a{
+  text-decoration: none;
+  list-style: none;
+  color: #fff;
+}
+
+#keto{
+  background-image: url(../img/keto.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#keto a{
+  text-decoration: none;
+  list-style: none;
+  color: #fff;
+}
+
+#bebidasNaturales{
+  background-image: url(../img/bebidasNaturales.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#bebidasNaturales a{
+  text-decoration: none;
+  list-style: none;
+  color: #fff;
+}
+
+#aceites{
+  background-image: url(../img/aceites.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#aceites a{
+  text-decoration: none;
+  list-style: none;
+  color: #fff;
+}
+
+/* ========== FIN ESTILOS INICIO ========== */
+  
+
+  
+/* ========== ESTILOS PRODUCTOS ========== */
+
+  .titulo-retorno{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+  }
+
+  .titulo-retorno .bi{
+    margin-left: 1em;
+  }
+
+  .titulo-retorno h2{
+    margin: 0;
+    margin-left: .5em;
+  }
+
+  .card-title{
+    color: #3b3b53;
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 0;
+  }
+
+  .card-img-top{
+    width: 35vw;
+    height: 17vh;
+    border: 3px solid #e77700;
+    border-radius: 7%;
+  }
+
+  .card{
+    background: linear-gradient(180deg, #ffb363 0%, rgba(250,141,19,1) 100%);
+    padding: .5em .8em;
+    width: 90vw !important;
+  }
+
+  .contenedor-img-caract{
+    display: flex;
+  }
+
+  .card-body{
+    padding: 0;
+    margin: 0;
+    margin-left: 1em;
+  }
+
+  .card-body h5{
+    font-size: .9rem;
+    padding-bottom: .6em;
+    margin: 0;
+  }
+
+  .btn{
+    background: #449bff;
+    border: 1px solid hsl(212, 95%, 43%);
+    color: #fff;
+    font-size: .8rem;
+    font-weight: 500;
+    padding: 1px 4px;
+    margin-top: .1em;
+  }
+
+  /* ========== FIN ESTILOS PRODUCTOS ========== */
+
+  /* ========== ESTILOS CARRITO ========== */
+
+  .carrito{
+    min-height: 80vh;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .itemCarrito th{
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+    font-size: .8rem;
+  }
+
+  .table__price{
+    padding: 0 !important;
+    font-size: 1rem;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .table__price p{
+    margin: 0;
+  }
+
+  .table__productos{
+    display: flex;
+    padding: .2em !important;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .table__productos h6{
+    font-size: .7em;
+    text-align: center;
+    margin: 0;
+    
+  }
+
+  .table__productos > img{
+    width: 6rem;
+    height: 5rem;
+    background-size: contain;
+    border-radius: 5px;
+  }
+
+  .table__cantidad{
+    padding: .2em !important;
+    text-align: center;
+    vertical-align: middle;   
+  }
+
+  .table__cantidad .delete{
+    width: 7vw;
+    height: 4vh;
+  }
+
+  .table__cantidad > input{
+    border: none;
+    outline: 0;
+    font-size: .75em;
+    font-weight: 700;
+    width: 10vw;
+    height: 3vh;
+  }
+
+  /* ========== FIN ESTILOS CARRITO ========== */
+
+
+  /* ========== ESTILOS PAGO ========== */
+
+  .titulo-pago{
+    background: rgb(78,79,80);
+background: linear-gradient(295deg, rgba(78,79,80,0.5) 0%, rgba(85,160,255,1) 50%, rgba(78,79,80,1) 100%);
+    border: 2px solid rgba(78,79,80,1);
+    border-radius: 15px;
+    width: 90vw;
+    box-shadow: 4px 4px 8px 0px rgba(78,79,80,1);
+    display: flex;
+    justify-content: center;
+    color: #fff;
+  }
+
+  .titulo-pago h2{
+    margin: 0;
+    padding: 0;
+
+  }
+
+  .tituloOpcionesCompra h3{
+    margin-top: 1.5em;
+    font-size: 1.1rem;
+    text-align: center;
+    font-weight: 400;
+
+  }
+
+  .opcionesCompra {
+    background: rgb(207, 207, 207);
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+    width: 94vw;
+    border-radius: 20px;
+    margin-bottom: 2.5em;
+    padding: .5em 0 1em 0;
+  }
+
+  .retirar {
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    flex-direction: column;
+    color: rgb(60, 60, 60);
+  }
+
+  .retirarBottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+  }
+
+  .retirar h4{
+    font-size: 1rem;
+    text-align: center;
+    margin: .5em 0;
+    margin-bottom: 1em;
+  }
+
+  .enviar {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    flex-direction: column;
+    color: rgb(60, 60, 60);
+  }
+
+  .enviarBottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;  
+  }
+
+  .enviar h4{
+    font-size: 1rem;
+    text-align: center;
+    margin: .5em 0
+  }
+
+  .contenedorFormulario {
+    background: darkkhaki;
+    width: 90vw;
+    height: auto;
+    padding: .5em;
+    border-radius: 20px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 1em;
+  }
+
+  .contenedorFormularioDomicilio{
+    background: darkkhaki;
+    width: 90vw;
+    height: auto;
+    padding: .5em;
+    border-radius: 20px;
+    text-align: center;
+    margin: 0;
+  }
+
+  .grupoFormulario{
+    display: flex;
+    
+  }
+
+
+
+
+
+
+
+
+  /* ========== FIN ESTILOS PAGO ========== */

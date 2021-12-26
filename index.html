@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punto Verde</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- css header -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+<div class="contenedor-gral">
+     <!-- HEADER PANEL SUPERIOR -->
+        <div class="header-top">
+          <div class="carritoLogo">
+            <div class="carritoIco">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+              </svg>
+            </div>
+            <div class="precio">
+              <p class="precioCarrito"></p>
+            </div>
+          </div>
+        </div>
+        <div class="header-bottom"> <!-- HEADER PANEL INFERIOR -->
+            
+            <div class="github"> <!-- ICONO GITHUB -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                </svg>
+            </div>
+
+            <div class="linkedin"> <!-- ICONO LINKEDIN -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                </svg>
+            </div>
+        </div>
+
+        <div class="header-logo"></div> <!-- HEADER LOGO CIRCULAR -->
+
+        <div class="titulo"> <!-- ========= TITULOS ========== -->
+            <h1 class="titulos">Punto Verde!</h1>
+            <h2 class="subtitulos">Come Bien, Sentite Sano</h2>
+        </div>        
+
+<!-- ================================================================================================= -->
+
+        <!-- =========== COMIENZO MENU ============= -->
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+
+            <!-- =========== PESTAÑA 1 INICIO ============= -->
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                    type="button" role="tab" aria-controls="pills-home" aria-selected="true">Categorias</button>
+            </li>
+            <!-- =========== FIN PESTAÑA 1 ============= -->
+
+
+            <!-- =========== PESTAÑA 2 CARRITO ============= -->
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                    type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Carrito</button>
+            </li>
+            <!-- =========== FIN PESTAÑA 2 ============= -->
+
+
+            <!-- =========== PESTAÑA 3 PAGO ============= -->
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Pago</button>
+            </li>
+            <!-- =========== FIN PESTAÑA 3 ============= -->
+
+            <!-- =========== PESTAÑA 4 FS ============= -->
+            <li class="nav-item" role="presentation">
+                <button class="nav-link hide" id="pills-fs-tab" data-bs-toggle="pill" data-bs-target="#pills-fs"
+                    type="button" role="tab" aria-controls="pills-fs" aria-selected="false">fs</button>
+            </li>
+            <!-- =========== FIN PESTAÑA 4 FS ============= -->
+
+            <!-- =========== PESTAÑA 5 DM ============= -->
+            <li class="nav-item" role="presentation">
+                <button class="nav-link hide" id="pills-dm-tab" data-bs-toggle="pill" data-bs-target="#pills-dm"
+                    type="button" role="tab" aria-controls="pills-dm" aria-selected="false">dm</button>
+            </li>
+            <!-- =========== FIN PESTAÑA 5 DM ============= -->
+
+            <!-- =========== PESTAÑA 6 K ============= -->
+            <li class="nav-item" role="presentation">
+                <button class="nav-link hide" id="pills-k-tab" data-bs-toggle="pill" data-bs-target="#pills-k"
+                    type="button" role="tab" aria-controls="pills-k" aria-selected="false">k</button>
+            </li>
+            <!-- =========== FIN PESTAÑA 6 K ============= -->
+
+            <!-- =========== PESTAÑA 7 BS ============= -->
+            <li class="nav-item" role="presentation">
+                <button class="nav-link hide" id="pills-bs-tab" data-bs-toggle="pill" data-bs-target="#pills-bs"
+                    type="button" role="tab" aria-controls="pills-bs" aria-selected="false">bs</button>
+            </li>
+            <!-- =========== FIN PESTAÑA 7 BS ============= -->
+
+            <!-- =========== PESTAÑA 8 A ============= -->
+            <li class="nav-item" role="presentation">
+                <button class="nav-link hide" id="pills-a-tab" data-bs-toggle="pill" data-bs-target="#pills-a"
+                    type="button" role="tab" aria-controls="pills-a" aria-selected="false">a</button>
+            </li>
+            <!-- =========== FIN PESTAÑA 8 A ============= -->
+
+        </ul>
+        <!-- =========== FIN MENU ============= -->
+
+        <!-- ================= ALERTAS ===================== -->
+        
+          <div class="alert container position-sticky top-0 alert-primary hide" role="alert">
+            Producto Añadido al carrito!
+          </div>
+
+          <div class="alert container position-sticky top-0 alert-danger remove" role="alert">
+            Producto removido!
+          </div>
+        
+        <!-- =============================================== -->
+
+
+<!-- =================== COMIENZO CONTENIDO ======================= -->
+        <div class="tab-content" id="pills-tabContent">
+
+            <!-- =========== CONTENIDO INICIO ============= -->
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+
+                <div class="main container-fluid">
+                    <!-- =============== CONTENIDO PRINCIPAL - CATEGORIAS ===================== -->
+                    <div class="categoria-productos" id="frutosSecos"><a href="#" onclick="fs()">Frutos secos</a></div>
+                    <div class="categoria-productos" id="dulcesMieles"><a href="#" onclick="dm()">Dulces/Mieles</a></div>
+                    <div class="categoria-productos" id="keto"><a href="#" onclick="k()">Keto</a></div>
+                    <div class="categoria-productos" id="bebidasNaturales"><a href="#" onclick="bs()">Bebidas saludables</a></div>
+                    <div class="categoria-productos" id="aceites"><a href="#" onclick="a()">Aceites</a></div>
+                </div>
+
+                <!-- ============ FOOTER ================ -->
+                <footer class="bg-dark footer">
+                    <div class="contenedor-footer">
+                        <div class="footer-sup">
+                            <div class="footer-titulo-logo">
+                                <div class="footer-logo"></div>
+                                <div class="footer-titulo">
+                                    <h4>Mercado Organico y Natural</h4>
+                                    <h5>Come sano, sentite bien</h5>
+                                </div>
+                            </div>
+                            <div class="footer-frase">
+                                <p>
+                                    Somos un mercado orgánico y natural de pequeños productores con formato feria, donde podés encontrar alimentos orgánicos, naturales, caseros, viandas, opciones veganas. Además contamos con un sector de cosmética 100% natural.
+                                </p>
+                            </div>
+                            <div class="footer-contacto">
+                                <h6>Contactanos</h6>
+                                <h5>Estamos en Av. Siempre Viva al 1234</h5>
+                                <h5>Abrimos todos los dias de 10 a 19 hs</h5>
+                                <div class="footer-ico">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                                        <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-discord" viewBox="0 0 16 16">
+                                        <path d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-mapa">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3351.9153070185985!2d-68.85757364287196!3d-32.84749403933832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e094de2581e31%3A0x5f9aa6d652a49037!2sDiet%C3%A9tita%20Punto%20Verde%20Mendoza!5e0!3m2!1ses-419!2sar!4v1639652814579!5m2!1ses-419!2sar" width="320" height="200" style="border:0;" allowfullscreen="" loading="lazy" class="mapa"></iframe>
+                        </div>
+                        <p class="text-center m-0 text-muted">
+                            <span class="footer-datos">
+                            ©Copyright 2021 - Todos los derechos reservados
+                            </span>
+                        </p>                       
+                    </div>
+                </footer>
+            </div>
+            <!-- =========== FIN CONTENIDO INICIO ============= -->
+
+
+
+            <!-- =========== CONTENIDO CARRITO ============= -->
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                
+                <div class="contendor-gral">
+
+
+                    <!-- ==============  MAIN ================ -->
+                        <div class="carrito">
+                          <table class="table table-dark table-hover">
+                            <thead>
+                              <tr class="text-primary">
+                                <th scope="col">#</th>
+                                <th scope="col">Productos</th>
+                                <th scope="col">Precio</th>
+                                <th scope="col">Cantidad</th>
+                              </tr>
+                            </thead>
+                                <!-- La clase tbody que usaremos despues         -->
+                            <tbody class="tbody">
+                                <!-- El tr creado en renderCarrito hace referencia a este tr que se encuentra dentro de tbody -->
+                                <!-- Todo lo que está dentro de tr es lo que se va a generar en la pestaña carrito -->
+
+                              <!-- <tr>
+                                <th scope="row">1</th>
+                                <td class="table__productos">
+                                  <img src="../img/almendras.png" alt="">
+                                  <h6 class="title">Title</h6>
+                                </td>
+                                <td class="table__price">
+                                  $ 5
+                                </td>
+                                <td class="table__cantidad">
+                                  <input type="number" min="1" value="1">
+                                  <button class="delete btn btn-danger">x</button>
+                                </td>
+                              </tr> -->
+                            
+                            
+                            </tbody>
+                          </table>
+                    <!-- ====================================== -->
+                        
+                          <div class="row mx-4">
+                            <div class="col">
+                              <h3 class="itemCarTotal">Total: 0</h3>
+                            </div>
+                          </div>
+                        </div>
+                      
+                    <footer>
+                        <p class="footer-datos">©Copyright 2021 - Todos los derechos reservados</p>
+                    </footer>    
+                    <!-- ================================================ -->
+
+                </div>
+            </div>
+            <!-- =========== FIN CONTENIDO CARRITO ============= -->
+
+
+
+            <!-- =========== CONTENIDO PAGO ============= -->
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+              <div class="container-fluid">
+                <div class="titulo-pago">
+                  <h2>Tu compra es de: <strong id="cantPrevia"></strong></h2>
+                </div>
+                <div class="tituloOpcionesCompra">
+                  <h3>¿Que hacemos con tus articulos?</h3>
+                </div>
+                <div class="opcionesCompra">
+                  <div class="retirar">
+                    <h4>Yo lo retiro</h4>
+                    <div class="retirarBottom">
+                      <input type="radio" checked name="radioOpcion" id="retirar" value="retirar">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-basket" viewBox="0 0 16 16">
+                        <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9H2zM1 7v1h14V7H1zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5zm2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5z"/>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="enviar">
+                    <h4>Enviar a casa</h4>
+                    <div class="enviarBottom">
+                      <input type="radio" name="radioOpcion" id="enviar" value="enviar">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" fill="currentColor" class="bi bi-truck" viewBox="0 0 16 16">
+                      <path d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5v-7zm1.294 7.456A1.999 1.999 0 0 1 4.732 11h5.536a2.01 2.01 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456zM12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12v4zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="formularioPago">
+
+
+
+<!-- ========================================================== -->
+ <!-- ContForm -->  <div class="contenedorFormulario">
+                      <h3>Datos Comprador</h3>
+                      <form class="retiroYo row g-3">
+
+ <!-- FORMULARIO -->    <div class="col-sm-12">
+     <!-- Nombre -->      <input type="text" aria-label="First name" class="form-control" placeholder="Nombre y Apellido" required>
+                        </div>
+
+                        <div class="col-sm-12">
+   <!-- Dni -->           <input type="number" class="form-control" min="0" maxlength="9" required placeholder="Dni" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+                        </div>
+
+                        <div class="col-sm-12">
+   <!-- Email -->         <input type="email" required class="form-control" id="exampleFormControlInput1" placeholder="Correo Electronico">
+                        </div>
+
+                        <div class="col-sm-12">
+   <!-- Telefono -->      <input type="number" required min="0" class="form-control" maxlength="10" placeholder="Telefono" oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+                        </div>
+
+
+                        <div class="col-12">
+<!-- direccion -->        <input type="text" class="form-control" id="inputAddress" placeholder="Direccion" required disabled>
+                        </div>
+
+<!-- =========== -->    <div class="grupoFormulario">
+                          <div class="col-sm-12">
+    <!-- Mzna -->           <input type="text" aria-label="First name" id="mzna" class="form-control" placeholder="Mzna" required disabled>
+                          </div>
+   
+                          <div class="col-sm-12">
+    <!-- Casa -->           <input type="number" class="form-control" min="0" maxlength="5" id="num" required placeholder="Casa" disabled oninput="if(this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);">
+                          </div>
+   
+                           <div class="col-md-2">
+    <!-- C.P. -->              <input type="text" disabled class="form-control" id="inputZip" placeholder="Codigo Postal" required>
+                           </div>
+   <!--  ========= -->  </div>
+
+<!-- Provincia -->        <div class="col-md-4">
+                            <select id="inputState" required disabled class="form-select">
+                              <option selected>Selecciona</option>
+                              <option>Mendoza</option>
+                              <option>San Juan</option>
+                              <option>San Luis</option>
+                              <option>Neuquen</option>
+                            </select>
+                          </div>
+
+                        
+
+                          <div class="confirmaCompra">
+                          <button class="btn btn-success">Comprar</button>
+                        </div>
+ <!-- FIN FORM -->    </form>
+ <!-- ContForm -->  </div>
+<!-- ========================================================== -->
+
+<!-- ========================================================== -->                    
+
+                      
+
+<!-- finformu --> </div>
+<!-- ========================================================= -->
+
+                
+                
+
+              </div>
+            </div>
+            <!-- </div> -->
+            
+            <!-- =========== FIN CONTENIDO PAGO ============= -->
+
+
+
+            <!-- =========== CONTENIDO OCULTO FS ============= -->
+              <div class="tab-pane fade" id="pills-fs" role="tabpanel" aria-labelledby="pills-fs-tab">
+                <div class="contenedor-gral">
+
+                  
+                    <!-- ======== MAIN ========= -->
+                  
+                    <div class="titulo-retorno">
+                        <a href="../index.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+                            </svg>
+                        </a>
+                        <h2 class="h4 text-primary">Frutos Secos</h2>
+                    </div>
+                
+                    <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+                      <div class="col d-flex justify-content-center mb-4">
+                        <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                            <h5 class="card-title text-center">Almendras sin cascara x 100 Grs</h5>
+                            <div class="contenedor-img-caract">
+                                <img src="../img/almendras.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <!-- <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                                    <h5>Categoria: <span class="item-cat">Frutos Secos</span></h5>
+                                    <h5>Unidad: <span class="item-uni">100 Grs</span></h5>
+                                    <h5>Precio: <span class="item-valor">$ 120</span></h5>
+                            <!-- la clase ".button" para el boton añadir al carrito -->            
+                                    <button  class="btn btn-danger button">Añadir a Carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+                      <div class="col d-flex justify-content-center mb-4">
+                        <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                            <h5 class="card-title text-center">Manies sin cascara x 100 Grs</h5>
+                            <div class="contenedor-img-caract">
+                                <img src="../img/manies.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <!-- <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                                    <h5>Categoria: <span class="item-cat">Frutos Secos</span></h5>
+                                    <h5>Unidad: <span class="item-uni">100 Grs</span></h5>
+                                    <h5>Precio: <span class="item-valor">$ 150</span></h5>
+                                    <button  class="btn btn-danger button">Añadir a Carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+                      <div class="col d-flex justify-content-center mb-4">
+                        <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                            <h5 class="card-title text-center">Pistachos sin tostar x 100 Grs</h5>
+                            <div class="contenedor-img-caract">
+                                <img src="../img/pistachos.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <!-- <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                                    <h5>Categoria: <span class="item-cat">Frutos Secos</span></h5>
+                                    <h5>Unidad: <span class="item-uni">100 Grs</span></h5>
+                                    <h5>Precio: <span class="item-valor">$ 80</span></h5>
+                                    <button  class="btn btn-danger button">Añadir a Carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+                      <div class="col d-flex justify-content-center mb-4">
+                        <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                            <h5 class="card-title text-center">Nueces sin pelar x 100 Grs</h5>
+                            <div class="contenedor-img-caract">
+                                <img src="../img/nueces.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <!-- <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                                    <h5>Categoria: <span class="item-cat">Frutos Secos</span></h5>
+                                    <h5>Unidad: <span class="item-uni">100 Grs</span></h5>
+                                    <h5>Precio: <span class="item-valor">$ 180</span></h5>
+                                    <button  class="btn btn-danger button">Añadir a Carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- ======= SMALL FOOTER ======= -->
+                    <p class="footer-datos">©Copyright 2021 - Todos los derechos reservados</p>
+                    <!-- ======= SMALL FOOTER ======= -->
+                </div>              
+                <!-- ======================================== -->
+              </div>
+            <!-- =========== FIN OCULTO FS ============= -->
+
+
+
+            <!-- =========== CONTENIDO OCULTO DM ============= -->
+            <div class="tab-pane fade" id="pills-dm" role="tabpanel" aria-labelledby="pills-dm-tab">
+                
+                <div class="contenedor-gral">
+
+                
+                    <!-- ======== MAIN ========= -->
+                  
+                  <div class="titulo-retorno">
+                    <a href="../index.html">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                        <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+                      </svg>
+                    </a>
+                    <h2 class="h4 text-primary">Dulces / Mieles</h2>
+                  </div>
+                
+                    <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+                      <div class="col d-flex justify-content-center mb-4">
+                        <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                          <h5 class="card-title text-center">Jalea de citricos x 400 Grs</h5>
+                        <div class="contenedor-img-caract">
+                          <img src="../img/jaleaCitricos.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <!-- <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                            <h5>Categoria: <span id="item-cat">Dulces/Miel</span></h5>
+                            <h5>Unidad: <span class="item-uni">400 Grs</span></h5>
+                            <h5>Precio: <span class="item-valor">$ 220</span></h5>
+                            <button  class="btn btn-danger button">Añadir a Carrito</button>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+                      <div class="col d-flex justify-content-center mb-4">
+                        <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                          <h5 class="card-title text-center">Jalea de frutilla x 400 Grs</h5>
+                        <div class="contenedor-img-caract">
+                          <img src="../img/jalea-frutilla.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <!-- <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                            <h5>Categoria: <span id="item-cat">Dulces/Miel</span></h5>
+                            <h5>Unidad: <span class="item-uni">400 Grs</span></h5>
+                            <h5>Precio: <span class="item-valor">$ 190</span></h5>
+                            <button  class="btn btn-danger button">Añadir a Carrito</button>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+                      <div class="col d-flex justify-content-center mb-4">
+                        <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                          <h5 class="card-title text-center">Miel de abeja x 400 Grs</h5>
+                        <div class="contenedor-img-caract">
+                          <img src="../img/mielAbeja.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <!-- <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                            <h5>Categoria: <span id="item-cat">Dulces/Miel</span></h5>
+                            <h5>Unidad: <span class="item-uni">400 Grs</span></h5>
+                            <h5>Precio: <span class="item-valor">$ 310</span></h5>
+                            <button  class="btn btn-danger button">Añadir a Carrito</button>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+                      <div class="col d-flex justify-content-center mb-4">
+                        <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                          <h5 class="card-title text-center">Miel de melaza x 400 Grs</h5>
+                        <div class="contenedor-img-caract">
+                          <img src="../img/mielCaña.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <!-- <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                            <h5>Categoria: <span id="item-cat">Dulces/Miel</span></h5>
+                            <h5>Unidad: <span class="item-uni">400 Grs</span></h5>
+                            <h5>Precio: <span class="item-valor">$ 245</span></h5>
+                            <button  class="btn btn-danger button">Añadir a Carrito</button>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                
+                    <p class="footer-datos">©Copyright 2021 - Todos los derechos reservados</p>
+                
+                
+                  </div>
+                    <!-- ======================================== -->    
+
+            </div>
+            <!-- =========== FIN OCULTO DM ============= -->
+
+
+
+            <!-- =========== CONTENIDO OCULTO K ============= -->
+            <div class="tab-pane fade" id="pills-k" role="tabpanel" aria-labelledby="pills-k-tab">
+                <div class="contenedor-gral">
+
+                
+                    <!-- ======== MAIN ========= -->
+                  
+                  <div class="titulo-retorno">
+                    <a href="../index.html">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                        <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+                      </svg>
+                    </a>
+                    <h2 class="h4 text-primary">Productos Keto</h2>
+                  </div>
+                
+                    <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+                      <div class="col d-flex justify-content-center mb-4">
+                        <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                          <h5 class="card-title text-center">Chocolate amargo x 150 Grs</h5>
+                        <div class="contenedor-img-caract">
+                          <img src="../img/chocolateAmargo.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <!-- <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                            <h5>Categoria: <span id="item-cat">Keto</span></h5>
+                            <h5>Unidad: <span class="item-uni">150 Grs</span></h5>
+                            <h5>Precio: <span class="item-valor">$ 80</span></h5>
+                            <button  class="btn btn-danger button">Añadir a Carrito</button>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+                      <div class="col d-flex justify-content-center mb-4">
+                        <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                          <h5 class="card-title text-center">Queso cascara negra x 100 Grs</h5>
+                        <div class="contenedor-img-caract">
+                          <img src="../img/quesoCascaraNegra.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <!-- <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                            <h5>Categoria: <span id="item-cat">Keto</span></h5>
+                            <h5>Unidad: <span class="item-uni">100 Grs</span></h5>
+                            <h5>Precio: <span class="item-valor">$ 250</span></h5>
+                            <button  class="btn btn-danger button">Añadir a Carrito</button>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+                      <div class="col d-flex justify-content-center mb-4">
+                        <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                          <h5 class="card-title text-center">Palta Hass x 1 Kg</h5>
+                        <div class="contenedor-img-caract">
+                          <img src="../img/palta.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <!-- <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                            <h5>Categoria: <span id="item-cat">Keto</span></h5>
+                            <h5>Unidad: <span class="item-uni">1 Kg</span></h5>
+                            <h5>Precio: <span class="item-valor">$ 200</span></h5>
+                            <button  class="btn btn-danger button">Añadir a Carrito</button>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+                      <div class="col d-flex justify-content-center mb-4">
+                        <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                          <h5 class="card-title text-center">Coles de Bruselas x 1 Kg</h5>
+                        <div class="contenedor-img-caract">
+                          <img src="../img/colesBruselas.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <!-- <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                            <h5>Categoria: <span id="item-cat">Keto</span></h5>
+                            <h5>Unidad: <span class="item-uni">1 Kg</span></h5>
+                            <h5>Precio: <span class="item-valor">$ 450</span></h5>
+                            <button  class="btn btn-danger button">Añadir a Carrito</button>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                
+                    <p class="footer-datos">©Copyright 2021 - Todos los derechos reservados</p>
+                
+                
+                  </div>
+                    <!-- ======================================== -->    
+            </div>
+            <!-- =========== FIN OCULTO K ============= -->
+
+
+
+            <!-- =========== CONTENIDO OCULTO BS ============= -->
+            <div class="tab-pane fade" id="pills-bs" role="tabpanel" aria-labelledby="pills-bs-tab">
+                <div class="contenedor-gral">
+                                
+                
+                
+                    <!-- ======== MAIN ========= -->
+                  
+                  <div class="titulo-retorno">
+                    <a href="../index.html">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                        <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+                      </svg>
+                    </a>
+                    <h2 class="h4 text-primary">Bebidas Saludables</h2>
+                  </div>
+                
+                    <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+                      <div class="col d-flex justify-content-center mb-4">
+                        <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                          <h5 class="card-title text-center">Jugo de Kiwi x 1 Lt</h5>
+                        <div class="contenedor-img-caract">
+                          <img src="../img/jugoKiwi.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <!-- <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                            <h5>Categoria: <span id="item-cat">Bebidas</span></h5>
+                            <h5>Unidad: <span class="item-uni">1 Lt</span></h5>
+                            <h5>Precio: <span class="item-valor">$ 180</span></h5>
+                            <button  class="btn btn-danger button">Añadir a Carrito</button>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+                      <div class="col d-flex justify-content-center mb-4">
+                        <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                          <h5 class="card-title text-center">Jugo de Piña y Perejil x 1 Lt</h5>
+                        <div class="contenedor-img-caract">
+                          <img src="../img/jugoPinaPerejil.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <!-- <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                            <h5>Categoria: <span id="item-cat">Bebidas</span></h5>
+                            <h5>Unidad: <span class="item-uni">1 Lt</span></h5>
+                            <h5>Precio: <span class="item-valor">$ 290</span></h5>
+                            <button  class="btn btn-danger button">Añadir a Carrito</button>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+                      <div class="col d-flex justify-content-center mb-4">
+                        <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                          <h5 class="card-title text-center">Jugo de Naranja x 1 Lt</h5>
+                        <div class="contenedor-img-caract">
+                          <img src="../img/jugoNaranja.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <!-- <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                            <h5>Categoria: <span id="item-cat">Bebidas</span></h5>
+                            <h5>Unidad: <span class="item-uni">1 Lt</span></h5>
+                            <h5>Precio: <span class="item-valor">$ 190</span></h5>
+                            <button  class="btn btn-danger button">Añadir a Carrito</button>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+                      <div class="col d-flex justify-content-center mb-4">
+                        <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                          <h5 class="card-title text-center">Jugo de Arandanos x 1 Lt</h5>
+                        <div class="contenedor-img-caract">
+                          <img src="../img/jugoArandanos.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <!-- <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                            <h5>Categoria: <span id="item-cat">Bebidas</span></h5>
+                            <h5>Unidad: <span class="item-uni">1 Lt</span></h5>
+                            <h5>Precio: <span class="item-valor">$ 80</span></h5>
+                            <button  class="btn btn-danger button">Añadir a Carrito</button>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                
+                    <p class="footer-datos">©Copyright 2021 - Todos los derechos reservados</p>
+                
+                
+                  </div>
+                    <!-- ======================================== -->
+            </div>
+            <!-- =========== FIN OCULTO BS ============= -->
+
+
+
+            <!-- =========== CONTENIDO OCULTO A ============= -->
+            <div class="tab-pane fade" id="pills-a" role="tabpanel" aria-labelledby="pills-a-tab">
+                
+                <div class="contenedor-gral">
+
+                
+                    <!-- ======== MAIN ========= -->
+                  
+                  <div class="titulo-retorno">
+                    <a href="../index.html">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                        <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+                      </svg>
+                    </a>
+                    <h2 class="h4 text-primary">Aceites</h2>
+                  </div>
+                
+                    <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+                      <div class="col d-flex justify-content-center mb-4">
+                        <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                          <h5 class="card-title text-center">Aceite de Fenogreco x 500 Ml</h5>
+                        <div class="contenedor-img-caract">
+                          <img src="../img/aceiteFenogreco.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <!-- <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                            <h5>Categoria: <span id="item-cat">Aceites</span></h5>
+                            <h5>Unidad: <span class="item-uni">500 Ml</span></h5>
+                            <h5>Precio: <span class="item-valor">$ 240</span></h5>
+                            <button  class="btn btn-danger button">Añadir a Carrito</button>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+                      <div class="col d-flex justify-content-center mb-4">
+                        <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                          <h5 class="card-title text-center">Aceite de ricino x 750 Ml</h5>
+                        <div class="contenedor-img-caract">
+                          <img src="../img/aceciteRicino.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <!-- <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                            <h5>Categoria: <span id="item-cat">Aceites</span></h5>
+                            <h5>Unidad: <span class="item-uni">750 Ml</span></h5>
+                            <h5>Precio: <span class="item-valor">$ 990</span></h5>
+                            <button  class="btn btn-danger button">Añadir a Carrito</button>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+                      <div class="col d-flex justify-content-center mb-4">
+                        <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                          <h5 class="card-title text-center">Aceite de Coco x 750 Ml</h5>
+                        <div class="contenedor-img-caract">
+                          <img src="../img/aceiteCoco.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <!-- <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                            <h5>Categoria: <span id="item-cat">Aceites</span></h5>
+                            <h5>Unidad: <span class="item-uni">750 Ml</span></h5>
+                            <h5>Precio: <span class="item-valor">$ 1590</span></h5>
+                            <button  class="btn btn-danger button">Añadir a Carrito</button>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+                      <div class="col d-flex justify-content-center mb-4">
+                        <div class="card shadow mb-1 bg-dark rounded" style="width: 20rem;">
+                          <h5 class="card-title text-center">Aceite de Oliva x 500 Ml</h5>
+                        <div class="contenedor-img-caract">
+                          <img src="../img/aceiteOliva.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <!-- <p class="card-text text-white-50 description">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                            <h5>Categoria: <span id="item-cat">Aceites</span></h5>
+                            <h5>Unidad: <span class="item-uni">500 Ml</span></h5>
+                            <h5>Precio: <span class="item-valor">$ 2480</span></h5>
+                            <button  class="btn btn-danger button">Añadir a Carrito</button>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                
+                    <p class="footer-datos">©Copyright 2021 - Todos los derechos reservados</p>
+                
+                
+                  </div>
+                    <!-- ======================================== -->
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+            <!-- =========== FIN OCULTO A ============= -->
+
+
+        </div>
+        <!-- =========== FIN CONTENIDO ============= -->
+
+
+</div>
+<!-- =========== FIN CONTENEDOR GRAL ============= -->
+
+
+<!-- DEPENDENCIAS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
