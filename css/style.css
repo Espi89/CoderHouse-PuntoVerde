@@ -227,7 +227,7 @@ body{
 }
 
 #frutosSecos{
-  background-image: url(./img/frutos-secos.jpg);
+  background-image: url(../img/frutos-secos.jpg);
   background-position: center;
   background-size: cover;
 }
