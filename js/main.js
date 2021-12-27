@@ -277,3 +277,21 @@ window.onload = function(){
         renderCarrito()
     }
 }
+
+ /**************
+  *    AJAX POST   *
+  **************/
+
+  /* var articulos = [];
+  $.ajax({
+    url: "./datos.json",
+    dataType: "json",
+    success: (response) => {
+      cargarDatos(response, articulos);
+    },
+  }); */
+
+
+
+
+

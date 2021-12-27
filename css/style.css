@@ -85,10 +85,10 @@ body{
   }
 
   .precio p{
-    font-size: .8rem;
+    font-size: .9rem;
     font-family: monospace;
     letter-spacing: .1rem;
-    font-weight: 300;
+    font-weight: 600;
   }
 
   .carritoLogo p {
@@ -510,7 +510,7 @@ background: linear-gradient(295deg, rgba(78,79,80,0.5) 0%, rgba(85,160,255,1) 50
 
   .contenedorFormulario {
     background: darkkhaki;
-    width: 90vw;
+    width: 94vw;
     height: auto;
     padding: .5em;
     border-radius: 20px;
