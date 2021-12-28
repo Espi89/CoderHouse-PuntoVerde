@@ -239,7 +239,7 @@ body{
 }
 
 #dulcesMieles{
-  background-image: url(./img/dulces-mieles.jpg);
+  background-image: url(../img/dulces-mieles.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -251,7 +251,7 @@ body{
 }
 
 #keto{
-  background-image: url(/img/keto.jpg);
+  background-image: url(../img/keto.jpg);
   background-position: center;
   background-size: cover;
 }
